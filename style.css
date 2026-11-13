@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    min-height: 100vh;
+    padding: 0 60px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.menu,
+.list {
+    flex: 1;
+}
+
+.photo {
+    flex: 2;
+    text-align: center;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #000;
+}
+summary {
+    font-size: 22px;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+.menu ul {
+    list-style: none;
+    padding-left: 20px;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25%;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+details[open] summary {
+    font-weight: bold;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 8px;
+}
+
+.subtitle {
+    color: #555;
+    margin: 0 0 48px;
+}
+
+summary {
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: " →";
+}
+
+details[open] summary::after {
+    content: " ←";
+}
+
+.menu ul {
+    border-left: 2px solid #000;
+    padding-left: 24px;
+}
+.project {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+.project h2 {
+    font-size: 20px;
+    margin: 40px 0 8px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 6px;
+}
+
+.back,
+.files a {
+    color: #000;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
